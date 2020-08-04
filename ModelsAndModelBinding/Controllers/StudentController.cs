@@ -29,7 +29,7 @@ namespace ModelsAndModelBinding.Controllers
             stu.EmailAddress = form["email"];
 
             //add to database.
-            ViewData["Added"] = true;
+            ViewData["Added"] = stu.FullName + "Was added to the Database!";
 
             return View();
         }
